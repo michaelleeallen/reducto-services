@@ -6,7 +6,7 @@ describe('lib/service-call', function () {
   afterEach(function () {
     nock.cleanAll();
   });
-  
+
   it('should make web service calls and return a Promise', function (done) {
     const resource = {foo: 'bar'};
 
@@ -42,7 +42,7 @@ describe('lib/service-call', function () {
     });
   });
 
-  it('should reject if response has an error status code', function () {
+  it('should reject if response has an error status code', function (done) {
     nock('http://localhost')
       .get('/api/resource')
       .reply(500);
