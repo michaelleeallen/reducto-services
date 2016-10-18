@@ -4,8 +4,10 @@
   "description": "A collection of higher order middleware for making service calls.",
   "main": "index.js",
   "scripts": {
+    "lint": "semistandard",
     "mocha": "NODE_ENV=test mocha -R dot",
     "test": "npm run mocha",
+    "pretest": "npm run lint",
     "test:watch": "npm run mocha -- --watch"
   },
   "keywords": [
@@ -24,5 +26,15 @@
   "dependencies": {
     "lodash": "^4.16.4",
     "request": "^2.75.0"
+  },
+  "semistandard": {
+    "env": {
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },    
+    "ignore": [
+      "test/"
+    ]
   }
 }
