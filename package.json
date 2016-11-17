@@ -4,7 +4,8 @@
   "description": "A collection of higher order middleware for making service calls.",
   "main": "index.js",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "lint": "semistandard",
