@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A collection of higher order middleware for making service calls.",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "semistandard",
     "mocha": "NODE_ENV=test mocha -R dot",
@@ -19,6 +22,14 @@
   ],
   "author": "Michael Allen",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelleeallen/reducto-services.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michaelleeallen/reducto-services/issues"
+  },
+  "homepage": "https://github.com/michaelleeallen/reducto-services",
   "devDependencies": {
     "mocha": "^3.1.2",
     "nock": "^8.1.0",
